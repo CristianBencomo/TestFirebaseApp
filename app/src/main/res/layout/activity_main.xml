@@ -6,87 +6,41 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/Fuel_field"
-        android:layout_width="296dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="56dp"
-        android:hint="Fuel Percentage (%)"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Location_field" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/Location_field"
-        android:layout_width="296dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="56dp"
-        android:hint="Location"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Car_field" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/Car_field"
-        android:layout_width="296dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="56dp"
-        android:hint="Car Model"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Name_field" />
-
     <Button
-        android:id="@+id/Submit_btn"
+        android:id="@+id/GetActivity_btn"
         android:layout_width="336dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="8dp"
-        android:text="Submit"
+        android:layout_height="51dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="32dp"
+        android:text="Retrieve Data"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.272"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Fuel_field" />
+        app:layout_constraintTop_toBottomOf="@+id/SendActivity_btn" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/Home_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="45dp"
-        android:text="Fill out the data below"
-        android:textSize="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="32dp"
+        android:text="Welcome to your home page"
+        android:textSize="26dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="0dp" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/Name_field"
-        android:layout_width="296dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="56dp"
-        android:hint="Name"
+    <Button
+        android:id="@+id/SendActivity_btn"
+        android:layout_width="336dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="32dp"
+        android:text="Send Data"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
+        app:layout_constraintTop_toBottomOf="@+id/Home_txt" />
 </androidx.constraintlayout.widget.ConstraintLayout>
